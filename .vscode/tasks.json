@@ -1,0 +1,84 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🚀 Start Aluana AI Dev Server",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "dev"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "📦 Install Dependencies",
+      "type": "shell",
+      "command": "npm",
+      "args": ["install"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🔨 Build Production",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "build"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🧹 Lint Code",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "lint"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🔄 Restart Dev Server",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "dev"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new",
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
